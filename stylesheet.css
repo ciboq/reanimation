@@ -1,0 +1,19 @@
+html,body,#mask1 {
+    position: relative;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    background: url('mask1.png');
+    background-size: 100% auto;
+  }
+  #mask2{
+    width: 100%;
+    margin: 0;
+    -webkit-mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/40713/xray-machine.png');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 250px;
+    cursor: none;
+  }
+  * {
+    box-sizing: border-box;
+  }
