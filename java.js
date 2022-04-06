@@ -1,29 +1,8 @@
-var svgElement = document.querySelector('svg');
-var maskedElement = document.querySelector('#mask-circle');
-var circleFeedback = document.querySelector('#circle-shadow');
-var svgPoint = svgElement.createSVGPoint();
+let screenLog = document.querySelector('#screen-log');
+document.addEventListener('mousemove', logKey);
 
-function cursorPoint(e, svg) {
-    svgPoint.x = e.clientX;
-    svgPoint.y = e.clientY;
-    return svgPoint.matrixTransform(svg.getScreenCTM().inverse());
+function logKey(e) {
+  screenLog.innerHTML = `
+    Screen X/Y: ${e.screenX}, ${e.screenY}
+    Client X/Y: ${e.clientX}, ${e.clientY}`;
 }
-
-function update(svgCoords) {
-    maskedElement.setAttribute('cx', svgCoords.x);
-    maskedElement.setAttribute('cy', svgCoords.y);
-    circleFeedback.setAttribute('cx', svgCoords.x);
-    circleFeedback.setAttribute('cy', svgCoords.y);
-}
-
-window.addEventListener('mousemove', function(e) {
-  update(cursorPoint(e, svgElement));
-}, false);
-
-document.addEventListener('touchmove', function(e) {
-    e.preventDefault();
-    var touch = e.targetTouches[0];
-    if (touch) {
-        update(cursorPoint(touch, svgElement));
-    }
-}, false);
