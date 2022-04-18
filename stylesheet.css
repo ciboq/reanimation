@@ -17,3 +17,98 @@ html,body,#mask1 {
   * {
     box-sizing: border-box;
   }
+
+  /* .reanimation{
+    display:flex;
+    flex-direction: row;
+    z-index: 2;
+    position:absolute;
+    left:45vw;
+    top:50vh;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: oblique;
+    font-size: 50pt;
+  } */
+
+  .r{
+    position:absolute;
+    z-index: 2;
+    top:40vh;
+    left:5vw;
+  }
+
+  .e{
+    position:absolute;
+    z-index: 2;
+    top:40vh;
+    left:10vw;
+  }
+
+  .a{
+    position:absolute;
+    z-index: 2;
+    top:40vh;
+    left:20vw;
+  }
+
+  .n{
+    position:absolute;
+    z-index: 2;
+    top:40vh;
+    left:30vw;
+  }
+
+  .i{
+    position:absolute;
+    z-index: 2;
+    top:40vh;
+    left:40vw;
+  }
+
+  .m{
+    position:absolute;
+    z-index: 2;
+    top:40vh;
+    left:60vw;
+  }
+
+  .aa{
+    position:absolute;
+    z-index: 2;
+    top:40vh;
+    left:70vw;
+    color:white;
+  }
+
+  .t{
+    position:absolute;
+    z-index: 2;
+    top:40vh;
+    left:80vw;
+    color:white;
+  }
+
+  .ii{
+    position:absolute;
+    z-index: 2;
+    top:50vh;
+    left:40vw;
+  }
+
+  .o{
+    position:absolute;
+    z-index: 2;
+    top:50vh;
+    left:70vw;
+    color:white;
+  }
+
+  .nn{
+    position:absolute;
+    z-index: 2;
+    top:50vh;
+    left:80vw;
+    color:white;
+  }
